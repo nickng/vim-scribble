@@ -19,7 +19,7 @@ syn region scribbleComment      start="/\*" end="\*/" contains=scribbleTodo,@Spe
 syn match scribbleLineComment   "//.*$" contains=scribbleTodo,@Spell
 
 " Message type
-syn region scribbleMsgPayload   start=/(\w\+/ms=s+1 end=/)/me=s-1 contained
+syn region scribbleMsgPayload   start=/(/ms=s+1 end=/)/me=s-1 contained
 syn region scribbleMsgLabel     start="\w*(" end=")" keepend contained contains=scribbleMsgPayload,@Spell
 
 " Blocks
