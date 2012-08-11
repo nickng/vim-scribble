@@ -10,8 +10,8 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword scribbleKeyword     and as at catch choice continue create do enter from import instantiates interruptible or par rec spawn throw to with
-syn keyword scribbleType        role global local protocol
+syn keyword scribbleKeyword     and as at catch choice continue create do enter from import instantiates interruptible or par rec spawns throw to with
+syn keyword scribbleType        role global local protocol const range
 
 " Comments
 syn keyword scribbleTodo        TODO FIXME XXX contained
@@ -20,7 +20,7 @@ syn match scribbleLineComment   "//.*$" contains=scribbleTodo,@Spell
 
 " Message type
 syn region scribbleMsgPayload   start=/(/ms=s+1 end=/)/me=s-1 contained
-syn region scribbleMsgLabel     start="\w*(" end=")" keepend contained contains=scribbleMsgPayload,@Spell
+syn region scribbleMsgLabel     start="^\s*\w*(" end=")" keepend contained contains=scribbleMsgPayload,@Spell
 
 " Blocks
 syn region scribbleBlk          start="{" end="}" fold contains=scribbleKeyword,scribbleLineComment,scribbleComment,scribbleMsgLabel,scribbleMsgPayload,scribbleBlk
