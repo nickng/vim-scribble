@@ -10,7 +10,7 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword scribbleKeyword     and as at catch choice continue create do enter for from if import instantiates interruptible or par rec spawns throw to with
+syn keyword scribbleKeyword     and as at catch choice continue create do enter for from if import instantiates interruptible or par rec spawns throw to with package
 syn keyword scribbleType        role global local protocol const range
 
 " Comments
