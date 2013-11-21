@@ -24,7 +24,7 @@ syn region scribbleMsgPayload   start=/(/ms=s+1 end=/)/me=s-1 contained
 syn region scribbleMsgLabel     start="^\s*\w*(" end=")" keepend contained contains=scribbleMsgPayload,@Spell
 
 " Blocks
-syn region scribbleBlk          start="{" end="}" fold contains=scribbleKeyword,scribbleLineComment,scribbleComment,scribbleMsgLabel,scribbleMsgPayload,scribbleBlk
+syn region scribbleBlk          start="{" end="}" fold contains=scribbleKeyword,pabbleKeyword,scribbleLineComment,scribbleComment,scribbleMsgLabel,scribbleMsgPayload,scribbleBlk
 
 hi def link scribbleKeyword     Keyword
 hi def link pabbleKeyword       Keyword
