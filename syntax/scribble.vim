@@ -11,7 +11,7 @@ endif
 
 " Keywords
 syn keyword scribbleKeyword     and as at by catches choice continue do from global import instantiates interruptible local module or par protocol rec role sig throws to type with
-syn keyword pabbleKeyword       allreduce const except foreach group if in inf is oneof range repeat
+syn keyword pabbleKeyword       allreduce const except foreach group if in inf is oneof range repeat max
 syn keyword scribbleType        role global local protocol const range
 
 " Comments
